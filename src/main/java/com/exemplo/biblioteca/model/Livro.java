@@ -15,17 +15,14 @@ public class Livro {
     private int ano;
     private boolean disponivel = true;
 
-    // Construtor vazio (obrigatório para JPA)
     public Livro() {}
 
-    // Construtor com título e autor
     public Livro(String titulo, String autor) {
         this.titulo = titulo;
         this.autor = autor;
         this.disponivel = true;
     }
 
-    // Construtor com título, autor e ano
     public Livro(String titulo, String autor, int ano) {
         this.titulo = titulo;
         this.autor = autor;
@@ -34,44 +31,18 @@ public class Livro {
     }
 
     // Getters e Setters
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    // **Adicionado setter para id**
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public String getTitulo() { return titulo; }
+    public void setTitulo(String titulo) { this.titulo = titulo; }
 
-    public String getTitulo() {
-        return titulo;
-    }
+    public String getAutor() { return autor; }
+    public void setAutor(String autor) { this.autor = autor; }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
+    public int getAno() { return ano; }
+    public void setAno(int ano) { this.ano = ano; }
 
-    public String getAutor() {
-        return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public int getAno() {
-        return ano;
-    }
-
-    public void setAno(int ano) {
-        this.ano = ano;
-    }
-
-    public boolean isDisponivel() {
-        return disponivel;
-    }
-
-    public void setDisponivel(boolean disponivel) {
-        this.disponivel = disponivel;
-    }
+    public boolean isDisponivel() { return disponivel; }
+    public void setDisponivel(boolean disponivel) { this.disponivel = disponivel; }
 }

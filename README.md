@@ -1,18 +1,37 @@
-## Getting Started
+# Biblioteca Spring Boot
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Projeto de gerenciamento de livros usando Spring Boot, Spring Data JPA e MySQL.
 
-## Folder Structure
+## Funcionalidades
+- Listar todos os livros
+- Buscar livro por ID, título ou autor
+- Adicionar, atualizar e deletar livros
 
-The workspace contains two folders by default, where:
+## Tecnologias
+- Java 17
+- Spring Boot
+- Spring Data JPA / Hibernate
+- MySQL
+- Maven
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Estrutura do Projeto
+- controller: endpoints REST
+- service: regras de negócio
+- repository: acesso ao banco
+- model: entidades JPA
+- exception: exceções customizadas
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Executando
+1. Configure o MySQL (`biblioteca_db`) e ajuste `application.properties`.
+2. Rode `mvn clean install`.
+3. Execute `mvn spring-boot:run`.
+4. API disponível em `http://localhost:8080/livros`.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Exemplos de Endpoints
+- GET /livros
+- GET /livros/{id}
+- POST /livros
+- PUT /livros/{id}
+- DELETE /livros/{id}
+- GET /livros/titulo/{titulo}
+- GET /livros/autor/{autor}

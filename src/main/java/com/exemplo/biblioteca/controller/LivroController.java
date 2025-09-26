@@ -40,6 +40,7 @@ public class LivroController {
                 .map(l -> {
                     l.setTitulo(livro.getTitulo());
                     l.setAutor(livro.getAutor());
+                    l.setAno(livro.getAno());
                     l.setDisponivel(livro.isDisponivel());
                     return ResponseEntity.ok(livroService.salvar(l));
                 })
@@ -54,5 +55,16 @@ public class LivroController {
                     return ResponseEntity.noContent().<Void>build();
                 })
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    // Endpoints extras
+    @GetMapping("/titulo/{titulo}")
+    public List<Livro> buscarPorTitulo(@PathVariable String titulo) {
+        return livroService.buscarPorTitulo(titulo);
+    }
+
+    @GetMapping("/autor/{autor}")
+    public List<Livro> buscarPorAutor(@PathVariable String autor) {
+        return livroService.buscarPorAutor(autor);
     }
 }
