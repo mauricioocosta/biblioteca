@@ -1,6 +1,6 @@
 package com.exemplo.biblioteca;
 
-import com.exemplo.biblioteca.repository.BibliotecaDAO;
+import com.exemplo.biblioteca.BibliotecaDAO;
 import com.exemplo.biblioteca.model.Livro;
 import com.exemplo.biblioteca.exception.LivroNaoEncontradoException;
 

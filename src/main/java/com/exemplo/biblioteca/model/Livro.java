@@ -1,4 +1,4 @@
-package main.java.com.exemplo.biblioteca.model;
+package com.exemplo.biblioteca.model;
 
 import jakarta.persistence.*;
 
@@ -36,6 +36,11 @@ public class Livro {
     // Getters e Setters
     public Long getId() {
         return id;
+    }
+
+    // **Adicionado setter para id**
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitulo() {

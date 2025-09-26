@@ -1,4 +1,4 @@
-package main.java.com.exemplo.biblioteca.exception;
+package com.exemplo.biblioteca.exception;
 // Exceção customizada para quando um livro não for encontrado
 public class LivroNaoEncontradoException extends Exception {
     public LivroNaoEncontradoException(String mensagem) {

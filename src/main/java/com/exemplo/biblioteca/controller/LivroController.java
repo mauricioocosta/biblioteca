@@ -1,7 +1,7 @@
-package main.java.com.exemplo.biblioteca.controller;
+package com.exemplo.biblioteca.controller;
 
-import main.java.com.exemplo.biblioteca.model.Livro;
-import main.java.com.exemplo.biblioteca.service.LivroService;
+import com.exemplo.biblioteca.model.Livro;
+import com.exemplo.biblioteca.service.LivroService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

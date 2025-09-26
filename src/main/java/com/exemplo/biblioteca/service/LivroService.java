@@ -1,7 +1,7 @@
-package main.java.com.exemplo.biblioteca.service;
+package com.exemplo.biblioteca.service;
 
-import main.java.com.exemplo.biblioteca.model.Livro;
-import main.java.com.exemplo.biblioteca.repository.LivroRepository;
+import com.exemplo.biblioteca.model.Livro;
+import com.exemplo.biblioteca.repository.LivroRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
